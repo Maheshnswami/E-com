@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    
+}
+.nav{
+    justify-content: end;
+    align-items: end;
+
+}
+ul{
+    display: flex;
+}
+li{
+    list-style:  none;
+    margin: 20px;
+}
+.logo{
+    font-size: 1.5em;
+    margin: 20px 0 20px 0;
+    color: chartreuse;
+}
+ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    opacity: 0.1;
+    background-color: yellowgreen;
+}
+
+.btn{
+    width: 10%;
+    padding: 8px;
+    background:  chartreuse;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.title{
+    margin: 10% 10px 20px 10px;
+    /* padding: 20px 10px 10px 20px; */
+    font-size: 1.4em;
+    color: darkred;
+    font-weight: 400;
+   
+
+}
+a:hover{
+    color: chartreuse;
+    scale: 1.2;
+    cursor: pointer;
+}
+.add{
+    width: 15%;
+    padding: 8px;
+    background:  chartreuse;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+}
+.maincontent{
+    width: 100%;
+    position: static;
+    
+}
+p ,h2{
+    position: relative;
+    z-index: 1;
+    margin: 20px 15%;
+}
+section{
+    padding: 40px 0;
+}
+.image{
+    height: 380px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("shoes12.jpg");
+}
+.text{
+    position: relative;
+    
+}
+.text::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    rotate: -4deg;
+    translate: -50% -50%;
+    width: 150%;
+    height: 125%;
+    background: #ffffff;
+}
